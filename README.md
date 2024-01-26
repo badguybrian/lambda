@@ -1,0 +1,2 @@
+# lambdaOS
+an nix dotfile
