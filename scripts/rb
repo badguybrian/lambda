@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+sleep 1
+ ehco "Welcome!"
+sleep 1
+
+ echo "Choose system to rebuild"
+
+ echo "1. Lambda"
+  echo "system with great funcitionity"
+
+
