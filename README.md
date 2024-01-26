@@ -1,4 +1,4 @@
-# lambdaOS
+# lambda
 
 ### Descripition
  ` an nix dotfiles for my needs `
