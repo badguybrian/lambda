@@ -3,7 +3,7 @@
         border: none;
         border-radius: 5px;
         font-family: "IosevkaTerm Nerd Font" ;
-        font-size: 15x;
+        font-size: 15px;
         font-weight: bold;
         min-height: 10px;
         margin-top: 2px;
