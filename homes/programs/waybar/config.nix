@@ -4,7 +4,7 @@
     position = "left";
     height = 1070;
     spacing = 2;
-    width = 55;
+    width = 60;
     output = "eDP-1";
     modules-left = [
                       "custom/menu" 
@@ -22,8 +22,6 @@
                       ];
 
     margin-left = 5;
-    margin-top = 50;
-    margin-bottom = 50;
     margin-right = 5;
 
     "hyprland/workspaces" = {
@@ -53,7 +51,7 @@
     "custom/menu" = {
       format = " ";
       tooltip = false;
-      on-click = "rofi -show drun";
+      on-click = "anyrun";
       };
 
     clock = {

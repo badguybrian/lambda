@@ -1,7 +1,7 @@
 { config, ... }: {
   wayland.windowManager.hyprland.settings = {
     "$mod" = "SUPER";
-    
+
       animations = {
         enabled = true;
         first_launch_animation = false;
@@ -27,6 +27,7 @@
     exec-once = [
       "swww init"
       "waybar"
+      "lxsession"
     ];      
 
     general = {
@@ -90,6 +91,9 @@
      "SUPERSHIFT, right, movewindow, r"
      "SUPERSHIFT, up, movewindow, u"
      "SUPERSHIFT, down, movewindow, d"
+
+     "$mod, Z, exec, grimblast --cursor copy screen"
+     "$mod, X, exec, grimblast copy area"
     ];
 
     bindm = [
@@ -110,8 +114,8 @@
 
       monitor = [
         ",highrr,auto,1"
-        "eDP-1,1920x1080,0x0,1"
-        "DP-2,1920x1080@144,0x-1080,1"
+        "eDP-1,1920x1080,0x0,1" #no screen hz :(
+        "HDMI-A-1,1920x1080@60,0x1920,1" #yeay
       ];
   };
 };
