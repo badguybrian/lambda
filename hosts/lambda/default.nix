@@ -11,6 +11,23 @@
    system.stateVersion = "24.05";
    time.timeZone = "Asia/Makassar";
 
+   security.rtkit.enable = true;
+   sound.enable = lib.mkForce false;
+   hardware.pulseaudio.enable = lib.mkForce false;
+   services.pipewire = {
+    enable = true;
+    alsa = {
+      enable = true;
+      support32Bit = true;
+    };
+    pulse.enable = true;
+    wireplumber.enable = true;
+    # jack.enable = true; # (optional)
+   };
+
+   services.dbus.enable = true;
+
+
    boot = {
     bootspec.enable = true;
 
