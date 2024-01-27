@@ -21,7 +21,7 @@
     {
      action = "<cmd>NvimTreeToggle<CR>";
      key = "f";
-   }
+    }
   ];
 
    plugins = {

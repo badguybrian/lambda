@@ -115,7 +115,7 @@
       monitor = [
         ",highrr,auto,1"
         "eDP-1,1920x1080,0x0,1" #no screen hz :(
-        "HDMI-A-1,1920x1080@60,0x1920,1" #yeay
+        "HDMI-A-1,1920x1080@60,0x1080,1" #yeay
       ];
   };
 };
