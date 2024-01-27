@@ -6,10 +6,10 @@
         font-size: 15px;
         font-weight: bold;
         min-height: 10px;
-        margin-top: 2px;
-        margin-bottom: 2px;
-        margin-left: 2px;
-        margin-right: 2px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        margin-left: 4px;
+        margin-right: 4px;
     }
 
  window#waybar {

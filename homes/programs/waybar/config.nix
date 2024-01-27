@@ -3,7 +3,7 @@
     layer = "top";
     position = "left";
     height = 1070;
-    spacing = 5;
+    spacing = 2;
     width = 55;
     output = "eDP-1";
     modules-left = [
