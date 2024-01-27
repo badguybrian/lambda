@@ -15,7 +15,9 @@
                        ];
 
       modules-right = [
-                       "clock"  
+                       "clock"
+                       "backlight"
+                       "pulseaudio"
                        "battery"
                       ];
 

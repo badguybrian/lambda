@@ -3,7 +3,7 @@
         border: none;
         border-radius: 5px;
         font-family: "IosevkaTerm Nerd Font" ;
-        font-size: 14px;
+        font-size: 15x;
         font-weight: bold;
         min-height: 10px;
         margin-top: 2px;
@@ -17,10 +17,10 @@
     background-color: #1E1E2E;
     font-weight: bold;
     border-radius: 10px;
-    border-top: 3px solid #CBA6F7;
-    border-bottom: 3px solid #CBA6F7;
-    border-left: 3px solid #cba6f7;
-    border-right: 3px solid #cba6f7;
+    border-top: 5px solid #CBA6F7;
+    border-bottom: 5px solid #CBA6F7;
+    border-left: 5px solid #cba6f7;
+    border-right: 5px solid #cba6f7;
 }
 
     button {
