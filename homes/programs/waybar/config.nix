@@ -4,8 +4,7 @@
     position = "left";
     height = 1070;
     spacing = 2;
-    width = 60;
-    output = "eDP-1";
+    width = 70;
     modules-left = [
                       "custom/menu" 
                       ];

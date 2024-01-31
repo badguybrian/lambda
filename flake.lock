@@ -977,6 +977,22 @@
     },
     "nixpkgs_5": {
       "locked": {
+        "lastModified": 1706550542,
+        "narHash": "sha256-UcsnCG6wx++23yeER4Hg18CXWbgNpqNXcHIo5/1Y+hc=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "97b17f32362e475016f942bbdfda4a4a72a8a652",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_6": {
+      "locked": {
         "lastModified": 1703961334,
         "narHash": "sha256-M1mV/Cq+pgjk0rt6VxoyyD+O8cOUiai8t9Q6Yyq4noY=",
         "owner": "NixOS",
@@ -1088,6 +1104,7 @@
         "rust-overlay": "rust-overlay",
         "schizofox": "schizofox",
         "treefmt-nix": "treefmt-nix_2",
+        "unimatrix": "unimatrix",
         "xdg-portal-hyprland": "xdg-portal-hyprland"
       }
     },
@@ -1326,6 +1343,24 @@
         "type": "github"
       }
     },
+    "unimatrix": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_5"
+      },
+      "locked": {
+        "lastModified": 1706649679,
+        "narHash": "sha256-lTQRpq92wdvzvCd+3V2VwHdl7s8115ArTxy7A0BPxX0=",
+        "owner": "avrahambenaram",
+        "repo": "unimatrix",
+        "rev": "94b3700a2b29e903f1510becc038937ed27e4be7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "avrahambenaram",
+        "repo": "unimatrix",
+        "type": "github"
+      }
+    },
     "wlroots": {
       "flake": false,
       "locked": {
@@ -1349,7 +1384,7 @@
       "inputs": {
         "hyprland-protocols": "hyprland-protocols_2",
         "hyprlang": "hyprlang_2",
-        "nixpkgs": "nixpkgs_5",
+        "nixpkgs": "nixpkgs_6",
         "systems": "systems_8"
       },
       "locked": {

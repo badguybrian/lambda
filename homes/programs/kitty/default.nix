@@ -13,8 +13,8 @@
       '';
 
       character = {
-        success_symbol = "[λ](bold blue)";
-        error_symbol = "[λ](bold red)";
+        success_symbol = "[λ >](bold blue)";
+        error_symbol = "[λ >](bold red)";
       };
     };
 
@@ -28,9 +28,9 @@
     settings = {
       scrollback_lines = 10000;
       placement_strategy = "center";
-      window_padding_width = 10;
-      window_margin_width = 10;
-      cursor_shape = "underline";
+      window_padding_width = 5;
+      window_margin_width = 5;
+      cursor_shape = "beam";
       cursor_blink_interval = "0.5";
 
       allow_remote_control = "yes";

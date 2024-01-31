@@ -137,6 +137,8 @@
       };
     };
 
+    unimatrix.url = "github:avrahambenaram/unimatrix";
+
     pre-commit-hooks = {
       url = "github:cachix/pre-commit-hooks.nix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -166,5 +168,5 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-   };
-  }
+  };
+}

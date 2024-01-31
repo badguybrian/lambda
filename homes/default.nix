@@ -1,6 +1,7 @@
 { config,
   pkgs,
   lib,
+  inputs,
   ... }: {
 
   imports = [
@@ -19,8 +20,11 @@
      package = pkgs.bibata-cursors;
      name = "Bibata-Modern-Classic";
      size = 24;
-    };
    };
+   packages = [
+    inputs.unimatrix.packages.x86_64-linux.unimatrix
+   ];
+  };
 
   gtk = {
     enable = true;
