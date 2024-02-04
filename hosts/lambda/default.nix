@@ -10,6 +10,7 @@
 
    system.stateVersion = "24.05";
    time.timeZone = "Asia/Makassar";
+   networking.networkmanager.enable = true;
 
    security.rtkit.enable = true;
    sound.enable = lib.mkForce false;
@@ -47,12 +48,30 @@
     ];
 
     loader = {
-      # systemd-boot on UEFI
-      efi.canTouchEfiVariables = true;
-      systemd-boot.enable = true;
+      grub = {
+        enable = true;
+        devices = [ "nodev" ];
+        efiInstallAsRemovable = true;
+        efiSupport = true;
+        useOSProber = false;
+        theme = pkgs.stdenv.mkDerivation {
+          pname = "nixos-grub-theme";
+          version = "3.2";
+          src = pkgs.fetchurl {
+            url = "https://github.com/AdisonCavani/distro-grub-themes/releases/download/v3.2/nixos.tar";
+            hash = "sha256-oW5DxujStieO0JsFI0BBl+4Xk9xe+8eNclkq6IGlIBY=";
+          };
+          unpackPhase = ''mkdir $out && tar -xvf $src -C $out'';
+        };
+      };
+
     };
 
-    plymouth.enable = true;
+    plymouth = {
+      enable = true;
+      themePackages = [(pkgs.adi1090x-plymouth-themes.override {selected_themes = ["connect"];})];
+      theme = "connect";
+     };
   };
 
   environment.systemPackages = [config.boot.kernelPackages.cpupower];

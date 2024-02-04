@@ -1,9 +1,8 @@
 {
   mainBar = {
-    layer = "top";
     position = "left";
     height = 1070;
-    spacing = 2;
+    spacing = 4;
     width = 70;
     modules-left = [
                       "custom/menu" 

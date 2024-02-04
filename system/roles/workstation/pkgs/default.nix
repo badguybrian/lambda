@@ -10,5 +10,7 @@
     cinnamon.nemo
     firefox
     neofetch
+    kooha
+    vinegar
    ];
   }

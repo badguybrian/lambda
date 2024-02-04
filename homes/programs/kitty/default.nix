@@ -13,8 +13,8 @@
       '';
 
       character = {
-        success_symbol = "[λ >](bold blue)";
-        error_symbol = "[λ >](bold red)";
+        success_symbol = "[λ](bold blue)";
+        error_symbol = "[λ](bold red)";
       };
     };
 
@@ -45,7 +45,7 @@
 
 
       # colors
-      background_opacity = "1";
+      background_opacity = "0.80";
     };
 
     theme = "Catppuccin-Mocha";
