@@ -1,26 +1,36 @@
+{config,
+ pkgs,
+ ... }:
+
 {
   mainBar = {
+    spacing = 7;
+    margin-left = null;
+    margin-top = null;
+    margin-bottom = null;
+    margin-right = 5;
+    fixed-center = true;
+    exclusive = true;
     position = "left";
-    height = 1070;
-    spacing = 4;
+    height = 1080;
     width = 70;
     modules-left = [
-                      "custom/menu" 
-                      ];
-  
-      modules-center = [
-                        "hyprland/workspaces"
-                       ];
+      "custom/menu"
+      "hyprland/workspaces"
+     ];
 
-      modules-right = [
-                       "clock"
-                       "backlight"
-                       "pulseaudio"
-                       "battery"
-                      ];
+    modules-right = [
+      "clock"
+      "network"
+      "pulseaudio"
+      "custom/powermenu"
+      ];
 
-    margin-left = 5;
-    margin-right = 5;
+    "custom/powermenu" = {
+      on-click = "shutdown -h now";
+      on-click-right = "reboot";
+      format = " ";
+    };
 
     "hyprland/workspaces" = {
       on-click = "activate";
@@ -50,6 +60,7 @@
       format = " ";
       tooltip = false;
       on-click = "anyrun";
+      on-click-right = "shutdown -h now";
       };
 
     clock = {
@@ -63,7 +74,17 @@
       '';
     };
 
- pulseaudio = {
+      network = let
+          nm-editor = "${pkgs.networkmanagerapplet}/bin/nm-connection-editor";
+        in {
+          format-wifi = "󰤨 ";
+          format-ethernet = "󰈀";
+          format-alt = "󱛇";
+          format-disconnected = "󰤭";
+          tooltip-format = "{ipaddr}/{ifname} via {gwaddr} ({signalStrength}%)";
+          on-click-right = "${nm-editor}";
+        };
+
     pulseaudio = {
       scroll-step = 5;
       tooltip = true;
@@ -75,7 +96,6 @@
         default = ["" "" ""];
        };
      };
-   };
 
     battery = {
       states = {

@@ -11,6 +11,7 @@
     firefox
     neofetch
     kooha
-    vinegar
+    flightgear
+    networkmanagerapplet
    ];
   }

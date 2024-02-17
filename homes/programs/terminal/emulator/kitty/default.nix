@@ -45,9 +45,9 @@
 
 
       # colors
-      background_opacity = "0.80";
+      background_opacity = "1";
     };
 
-    theme = "Catppuccin-Mocha";
+    theme = "Catppuccin-Frappe";
   };
 }

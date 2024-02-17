@@ -5,7 +5,7 @@
   ...
 }: let
 
-  cfg = import ./config.nix;
+  cfg = import ./config.nix {inherit config pkgs;};
   waybar_style = import ./style.nix;
 
 in {

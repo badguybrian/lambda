@@ -23,7 +23,7 @@
     };
     pulse.enable = true;
     wireplumber.enable = true;
-    # jack.enable = true; # (optional)
+   jack.enable = true; # (optional)
    };
 
    services.dbus.enable = true;

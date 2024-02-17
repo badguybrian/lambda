@@ -1,7 +1,7 @@
 {
   imports = [
-    ./browsers
-    ./terminal
+    ./anyrun
+    ./hyprland
     ./waybar
   ];
 }
